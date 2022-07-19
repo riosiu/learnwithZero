@@ -17,7 +17,9 @@ void main() {
   // output yang muncul adalah true dari tipe data itu dan
   // ketika salah maka dia akan error!
   print(variable);
-
+  print(variableInt);
   // hasil akan merujuk pada true atau false pada output
   print(variable is String);
+  print(variable is! int);
+  print(variable is! bool);
 }
