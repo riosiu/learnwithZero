@@ -15,10 +15,21 @@ void main() {
   print(listInt);
   print(listString);
 
-  var names = <String>[];
-  names.add('richard');
-  names.add('sinulingga');
+  var names = <String>[
+    'Vold',
+    'Tzuch',
+  ];
 
-  print(names);
-  print(names.length);
+  // names.add('richard');
+  // names.add('sinulingga');
+
+  print(names); // isi dari names yang telah ditambahkan menggunakan method add.
+  print(names.length); // ada dua karakter panjangnya
+
+  print(names[0]); // akan menampilkan 'richard' //
+  names[0] =
+      'Takumi'; // merubah index 0 yang awalnya 'richard' menjadi 'takumi'
+  names.removeAt(
+      1); // menghapus index 1.karena panjangnya hanya 2 maka sisa satu saja.
+  print(names); // print 'takumi'
 }
